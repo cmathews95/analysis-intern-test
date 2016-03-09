@@ -6,7 +6,7 @@ This is an at-home exercise that we use as part of our standard interview proces
 
 ## Instructions
 
-* For each question, please download any datafiles associated with the question. 
+* For each question, please download any associated files. 
 * Write queries, scripts, or write ups as prompted to answer the questions listed below
 * Email your queries to careers@datascience.com with subject line "Analysis Intern Assessment"
 * If we haven't already recieved it, please attached your resume to your email.
