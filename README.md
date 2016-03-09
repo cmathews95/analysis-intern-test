@@ -6,18 +6,16 @@ This is an at-home exercise that we use as part of our standard interview proces
 
 ## Instructions
 
-* Download the sample_db.sql file
-* Write queries to answer the questions listed below
-* Email your queries to careers@datascience.com with subject line "SQL Proficiency Test"
+* For each question, please download any datafiles associated with the question. 
+* Write queries, scripts, or write ups as prompted to answer the questions listed below
+* Email your queries to careers@datascience.com with subject line "Analysis Intern Assessment"
 * If we haven't already recieved it, please attached your resume to your email.
 * You may use any resources you like to complete this.  For a simple solution, consider http://sqlfiddle.com/ or SQLite
-* Part of what you are being tested on is your ability to understand a schema that has incomplete documentation.  Make sure$
+* On sql related questions, we are looking for your ability to understand a schema that has incomplete documentation. We are also looking for diligence and attention to detail.
 
 ## Questions
 
-1: Looking at the .sql file in Q1, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question:
-
-Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
+1: Looking at the .sql file in Q1, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question: Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
 
 2: From scratch, write a simple method that estimates the estimate and variances of parametes for a simple OLS model, only using numpy.
 
