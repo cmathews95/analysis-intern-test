@@ -17,7 +17,7 @@ This is an at-home exercise that we use as part of our standard interview proces
 
 1: Looking at the .sql file in Q1, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question: Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
 
-2: Wite a simple method that estimates the estimate and variances of parametes for a simple OLS model, only using numpy or other libraries to store arraytypes. 
+2: Write a method that gives the OLS estimate and variance of linear model, only using numpy or other libraries to store arraytypes. 
 
 3: Write a function that takes a list and returns the frequency count of each element in the list.
 
