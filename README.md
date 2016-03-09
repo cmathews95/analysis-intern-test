@@ -17,13 +17,11 @@ This is an at-home exercise that we use as part of our standard interview proces
 
 1: Looking at the .sql file in Q1, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question: Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
 
-2: From scratch, write a simple method that estimates the estimate and variances of parametes for a simple OLS model, only using numpy.
+2: Wite a simple method that estimates the estimate and variances of parametes for a simple OLS model, only using numpy or other libraries to store arraytypes. 
 
-3: Write a function that takes a list and returns the frequency count of each element in the list (coding style, quick and easy)
+3: Write a function that takes a list and returns the frequency count of each element in the list.
 
-4: Given a probability distribution, compute the expected value and entropy
-Critical for the active learning project
-Also shows exposure to probability in general (or ability to look it up)
+4: Given the probability distribution (x -> p(x)), compute the expected value and entropy.
 
 5: A fictitious school developed a database containing a table called "student_scores" containing the fields `student_id,grade,class` taken by all students. student_id is an integer, grade is a double and class is a varchar(1). class element of (A,B,C,D,E,F,G,H,I). Your are tasked to find the best student who has taken class A, B, and C that year. We define the best student has the student who has had the best average grade in those three classes combined. All classes have the same weight in the calculation of the mean grade. Note that students who have taken class A, B and C that year could also have taken any classes in (D,E,F,G,H,I). Write down the SQL query to extract the student_id and average grade of the best student in classes A,B, and C combined.  
 
