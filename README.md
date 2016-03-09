@@ -1,0 +1,36 @@
+
+DataScience's Basic SQL Code Test
+================================
+
+This is an at-home exercise that we use as part of our standard interview process for positions requiring basic SQL profici$
+
+## Instructions
+
+* Download the sample_db.sql file
+* Write queries to answer the questions listed below
+* Email your queries to careers@datascience.com with subject line "SQL Proficiency Test"
+* If we haven't already recieved it, please attached your resume to your email.
+* You may use any resources you like to complete this.  For a simple solution, consider http://sqlfiddle.com/ or SQLite
+* Part of what you are being tested on is your ability to understand a schema that has incomplete documentation.  Make sure$
+
+## Questions
+
+1: Looking at the .sql file in Q1, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question:
+
+Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
+
+2: From scratch, write a simple method that estimates the estimate and variances of parametes for a simple OLS model, only using numpy.
+
+3: Write a function that takes a list and returns the frequency count of each element in the list (coding style, quick and easy)
+
+4: Given a probability distribution, compute the expected value and entropy
+Critical for the active learning project
+Also shows exposure to probability in general (or ability to look it up)
+
+5: A fictitious school developed a database containing a table called "student_scores" containing the fields `student_id,grade,class` taken by all students. student_id is an integer, grade is a double and class is a varchar(1). class element of (A,B,C,D,E,F,G,H,I). Your are tasked to find the best student who has taken class A, B, and C that year. We define the best student has the student who has had the best average grade in those three classes combined. All classes have the same weight in the calculation of the mean grade. Note that students who have taken class A, B and C that year could also have taken any classes in (D,E,F,G,H,I). Write down the SQL query to extract the student_id and average grade of the best student in classes A,B, and C combined.  
+
+6: Compute the eigenvalues and eigenvectors of the matrix [ [2,1], [1,2] ]. Is this eigenbasis orthonormal? Use the eigenvectors found above and represent vector [-5,-17] as a linear combination of those eigenvectors. Write down the coefficients of that decomposition.
+
+
+
+
