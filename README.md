@@ -30,7 +30,7 @@ for query in queries:
     con.execute(query)
 
 c = con.cursor()
-c.execute("select * form transaction")
+c.execute("select * from transaction")
 data = c.fetchall()
 ```
 
