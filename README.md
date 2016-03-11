@@ -35,13 +35,13 @@ data = c.fetchall()
 ```
 
 
-2: Write a method that gives the OLS estimate and variance for a linear model, using numpy or other libraries to store array types.
+2: Write a method that gives the OLS estimate and variance for the parameters of a linear model, using numpy or other libraries to store array types. Report the results of your estimates using data found in `question_5.csv`.
 
 3: Write a function that takes a list and returns the frequency count of each element in the list.
 
-4: Given the probability distribution found in question_4.py (x -> p(x)), compute the expected value and entropy.
+4: Given the probability distribution found in `question_4.py` (x -> p(x)), compute the expected value and entropy.
 
-5: Please use the two files with "q5" in their names. A fictitious school developed a database containing a table called "student_scores" containing the fields `student_id,grade,class` taken by all students. student_id is an integer, grade is a double and class is a varchar(1). class element of (A,B,C,D,E,F,G,H,I). Your are tasked to find the best student who has taken class A, B, and C that year. We define the best student has the student who has had the best average grade in those three classes combined. All classes have the same weight in the calculation of the mean grade. Note that students who have taken class A, B and C that year could also have taken any classes in (D,E,F,G,H,I). Write down the SQL query to extract the student_id and average grade of the best student in classes A,B, and C combined.  
+5: A fictitious school developed a database containing a table called "student_scores" containing the fields `student_id,grade,class` taken by all students. student_id is an integer, grade is a double and class is a varchar(1). class element of (A,B,C,D,E,F,G,H,I). Your are tasked to find the best student who has taken class A, B, and C that year. We define the best student has the student who has had the best average grade in those three classes combined. All classes have the same weight in the calculation of the mean grade. Note that students who have taken class A, B and C that year could also have taken any classes in (D,E,F,G,H,I). Write down the SQL query to extract the student_id and average grade of the best student in classes A,B, and C combined.  
 
 6: Compute the eigenvalues and eigenvectors of the matrix [ [2,1], [1,2] ]. Is this eigenbasis orthonormal? Use the eigenvectors found above and represent vector [-5,-17] as a linear combination of those eigenvectors. Write down the coefficients of that decomposition.
 
