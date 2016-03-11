@@ -17,6 +17,24 @@ This is an at-home exercise that we use as part of our standard interview proces
 
 1: Looking at the question_1.sql file, you'll find 3 tables: transaction_type, status_type, and transactions. Using the transactions table and the information provided in the lookups, please answer the following question: Calculate the average time between a customer's second to last to purchase and the cancellation of their account.
 
+The python code below might help make the sql data more accessible:
+
+```
+import sqlite3
+filePath = path/to/.sql file
+con = sqlite3.connect('DataScienceDatabase')
+f = open(filePath, 'r')
+sql = f.read() 
+queries = sql.split(";")
+for query in queries:
+    con.execute(query)
+
+c = con.cursor()
+c.execute("select * form transaction")
+data = c.fetchall()
+```
+
+
 2: Write a method that gives the OLS estimate and variance for a linear model, using numpy or other libraries to store array types.
 
 3: Write a function that takes a list and returns the frequency count of each element in the list.
