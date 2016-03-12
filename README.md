@@ -1,5 +1,5 @@
 
-DataScience's Assessment for Analysis Interns
+DataScience's Analysis Assessment
 ================================
 
 This is an at-home exercise that we use as part of our standard interview process for intern positions requiring analytical work.
