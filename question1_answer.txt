@@ -1,0 +1,54 @@
+Possibility that someone who cancelled their account and has only 1 successful purchase might have
+made 2 purchases but then cancelled the latest purchase and then cancelled the account. In this case,
+the time from the second purchase to cancellation of account is important even though this user
+only has 1 successful purchase.
+
+// Need to narrow down results to people who have cancelled their account. Only count successful/pending transactions
+// You could just count successful transactions but might get more recent/relevant info from counting pending trans.'s
+A = select user_id from transactions where transaction_type_id = 4 and transaction_status_id >= 1
+
+// Need to narrow down results to people who have made more than 2 successful/pending purchases
+// transaction_type_id = 3 and transaction_status_id >= 1
+B = select user_id from A where user appears at-least 3 times in transactions
+
+loop:
+  2nd_purchase_time = 2nd element of (select date from B order by most recent)
+  time_to_cancellation = cancellation_time - 2nd_purchase_time;
+avg. cancellation time = sum of time_cancellation/sizeof(B)
+
+
+----------------------
+
+A = select * from student_scores where class = 'A' or 'B' or 'C'
+B = select * from A where count(student_id) = 3
+best_student = 0;
+best_grade = 0;
+loop through B:
+  C = avg(select grade from B where student_id = curr_id)))
+    if (C > best_grade)
+      student =curr_id
+      grade = C
+
+answer = best_student
+
+// list of all cancellation and valid purchase transactions
+
+select user_id, max(ts < max(ts)) from transactions where user_id in (
+  select user_id from transactions group by user_id having count(*) >= 3) intersect
+  select user_id from transactions where transaction_type_id = 4 and transaction_status_id >= 1)
+and transaction_status_id >=1 and (transaction_type_id = 4 or transaction_type_id = 3) order by user_id
+
+select * from transactions where user_id in (select user_id from transactions group by user_id having count(*) >= 3) intersect select user_id from transactions where transaction_type_id = 4 and transaction_status_id >= 1) and transaction_status_id >=1 and (transaction_type_id = 4 or transaction_type_id = 3) order by user_id, ts
+select user_id, max(ts < max(ts)) from transactions where user_id in (select user_id from transactions group by user_id having count(*) >= 3 intersect select user_id from transactions where transaction_type_id = 4 and transaction_status_id >= 1) and transaction_status_id >=1 and transaction_type_id = 3 order by user_id
+
+group by user_id
+
+// to find average?
+select ts from transactions where ts < (select max(ts) from transactions where transaction_type_id = 3)
+select ts from transactions where user_id = id and transaction_type_id = 4 and transaction_status_id >= 1
+
+select ts from
+
+
+student_scores
+  student_id | grade | class
