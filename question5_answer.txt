@@ -1,5 +1,12 @@
+-----------Algorithm-------------
+1) Find students who have taken >= 3 classes
+2) only select students who have taken A, B, or C
+  *students selected here are ONLY those who have taken A, B & C.
+3) Select max student_id and avg grade in A, B & C
+
+-------------Query---------------
 select student_id, max(avg(grade)) from (
   select * from (
-    select * from student_scores group by student_id having count(*) = 3
+    select * from student_scores group by student_id having count(*) >= 3
   ) where class in ('A', 'B', 'C')
 ) group by student_id;
