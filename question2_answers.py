@@ -21,13 +21,13 @@ def ols(file):
     slope = (sum1/sum2)
     intercept = y_mean - (slope*x_mean)
     # Calculate variance
-    sum3 = 0
-    for x,y in zip(X,Y):
-        sum3 += (y - ((intercept + slope*x)**2))
-    variance = (sum1 / (len(X)-2))
+    # sum3 = 0
+    # for x,y in zip(X,Y):
+    #     sum3 += (y - ((intercept + slope*x)**2))
+    # variance = (sum1 / (len(X)-2))
     print ("Slope: ", slope)
     print ("Intercept: ", intercept)
-    print ("Variance:", variance)
+    #print ("Variance:", variance)
 
 
 ols('question_2.csv')
